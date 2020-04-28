@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
 import { Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
 
@@ -18,7 +18,7 @@ function Navigator(location){
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="justify-content-center" >
+                <Nav className="mr-auto" >
                 <Nav.Link as={Link} to="/home" active={location.pathname === '/home'}>Home</Nav.Link>
                 <Nav.Link as={Link} to="/collage" active={location.pathname === '/collage'}>Collage</Nav.Link>
                 <Nav.Link as={Link} to="/board" active={location.pathname === '/board'}>Board</Nav.Link>

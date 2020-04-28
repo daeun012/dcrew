@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 import {HashRouter, Route} from "react-router-dom";
 import Home from "./routes/Home";
 import Collage from "./routes/Collage";

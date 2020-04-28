@@ -1,15 +1,20 @@
 import React,{Component} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-import Slide from "../component/Slide.js";
+import ImageSlider from '../component/ImageSlider.js';
 
-function Home(){
-    return(
-        <Container fluid="lg">
-            <Row>
-                <Col style={{backgroundColor:"blue"}}><Slide></Slide></Col>
-            </Row>
-        </Container>
-    );
+
+class Home extends Component {
+    render(){
+        return(
+            <Container fluid="lg">
+                <Row>
+                    <Col>
+                        <ImageSlider></ImageSlider>
+                    </Col>
+                </Row>
+            </Container>
+        );
+    }
 }
 
 export default Home;

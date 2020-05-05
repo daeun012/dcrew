@@ -1,19 +1,17 @@
-.slider_list{
+.custom_slide {
+    background-color: lightgray;
+    padding: 0 20px;
+}
+
+.slider_list {
     text-align: center;
 }
 
 .slick-slide img {
-  display:inline !important;
- 
+    display: inline !important;
 }
 
-.slider_list > img{
-    width: 8rem;
-    height: 10rem;
+.slider_list > img {
+    width: 10rem;
+    height: 12rem;
 }
-
-
-.slick-list{
-  padding: 0 20px;
-}
-

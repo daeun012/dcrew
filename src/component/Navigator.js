@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Button } from 'react-bootstrap';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Navbar, Nav, Button } from 'react-bootstrap';
 import './Navigator.css';
 
 function Navigator() {
@@ -22,8 +21,8 @@ function Navigator() {
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/collage">
-                                대학교
+                            <Nav.Link as={Link} to="/crew">
+                                동아리
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -32,7 +31,7 @@ function Navigator() {
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/board">
+                            <Nav.Link as={Link} to="/community">
                                 자유게시판
                             </Nav.Link>
                         </Nav.Item>

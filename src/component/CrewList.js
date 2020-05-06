@@ -1,15 +1,28 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom";
 import { Image } from 'react-bootstrap';
 import './CrewList.css';
 
-function Crew({ key, id, poster, title, kind }) {
+function Crew({ id, poster, title, kind }) {
     return (
         <div className="crew">
+             <Link to={
+                    {
+                        pathname:`/crew/${id}`,
+                        state:{
+                           poster,
+                           title,
+                           kind
+                        }
+
+                    }
+                }> 
             <Image src={poster} alt={title} title={title} rounded />
             <div className="crew_body">
                 <h5 className="crew_title">{title}</h5>
                 <h6 className="crew_kind text-muted ">{kind}</h6>
             </div>
+            </Link>
         </div>
     );
 }

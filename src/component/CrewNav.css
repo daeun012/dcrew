@@ -3,18 +3,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 1rem 0 3rem 0;
+  
 }
 .crew_nav img {
-    border: 1px solid black;
-    width: 170px;
-    height: 170px;
+    width: 300px;
+    height: 300px;
 }
 
 .crew_nav .head {
     margin-bottom: 50px;
 }
 
+.crew_nav .head .h5{
+    font-weight: bold;
+}
+
 .crew_nav .body .nav-link {
-    padding-top: 2rem;
+    padding: 1.5rem 0;
+}
+.nav{
+    border:solid 1px black;
+    width:250px;
 }

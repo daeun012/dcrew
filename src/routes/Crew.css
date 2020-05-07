@@ -1,22 +1,21 @@
-.collage_row {
+.crew_row {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: stretch;
 }
 
-.collage_col_nav {
+.crew_col_1 {
     text-align: center;
     flex: 1;
-    border-right: 1px solid rgb(70, 33, 33);
-    padding: 2rem 15px;
-
+    padding: 0 15px;
 }
 
-.collage_col_list {
+.crew_col_2 {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 2rem;
     padding-bottom: 2rem;
     flex: 5;
-    text-align: center;
-    align-self: center;
+    justify-content: center;
 }

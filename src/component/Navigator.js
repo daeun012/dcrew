@@ -1,40 +1,40 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Navbar, Nav, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { Container, Navbar, Nav, Button, NavItem } from 'react-bootstrap';
 import './Navigator.css';
 
 function Navigator() {
     return (
         <Navbar bg="black" variant="black" expand="lg">
             <Container className="my_container" fluid="lg">
-                <Navbar.Brand as={Link} to="/">
+                <NavLink className="navbar-brand" to="/">
                     <img alt="" src="/logo192.png" width="30" height="30" className="d-inline-block align-top" /> Dcrew
-                </Navbar.Brand>
+                </NavLink>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Item>
-                            <Nav.Link as={Link} to="/">
+                        <NavItem>
+                            <NavLink className="nav-link" exact={true} to="/">
                                 홈
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link as={Link} to="/crew">
-                                동아리
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link as={Link} to="/board">
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link" to="/crew">
+                                동아리 소개
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link" to="/band">
                                 동아리 연합
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link as={Link} to="/community">
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link" to="/community">
                                 자유게시판
-                            </Nav.Link>
-                        </Nav.Item>
+                            </NavLink>
+                        </NavItem>
                     </Nav>
                     <div className="button_nav">
                         <Button size="sm" variant="outline-primary" style={{ marginRight: '5px' }}>

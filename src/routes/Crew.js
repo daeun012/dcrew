@@ -15,15 +15,15 @@ class Crew extends Component {
                 id: 1,
                 crew_nav: '체육분과',
                 crew_list: [
-                    { id: 1, poster: 'image/1.jpg', title: '슈퍼스타', kind: '농구' },
-                    { id: 2, poster: 'image/1.jpg', title: '슈팅스타', kind: '족구' },
-                    { id: 3, poster: 'image/1.jpg', title: '슈퍼스타', kind: '볼링' },
-                    { id: 4, poster: 'image/1.jpg', title: '슈퍼스타', kind: '농구' },
-                    { id: 5, poster: 'image/1.jpg', title: '슈팅스타', kind: '족구' },
-                    { id: 6, poster: 'image/1.jpg', title: '슈퍼스타', kind: '볼링' },
-                    { id: 7, poster: 'image/1.jpg', title: '슈퍼스타', kind: '농구' },
-                    { id: 8, poster: 'image/1.jpg', title: '슈팅스타', kind: '족구' },
-                    { id: 9, poster: 'image/1.jpg', title: '슈퍼스타', kind: '볼링' },
+                    { id: 1, poster: 'image/1.jpg', title: '체육1', kind: '농구' },
+                    { id: 2, poster: 'image/1.jpg', title: '체육2', kind: '족구' },
+                    { id: 3, poster: 'image/1.jpg', title: '체육3', kind: '볼링' },
+                    { id: 4, poster: 'image/1.jpg', title: '체육4', kind: '농구' },
+                    { id: 5, poster: 'image/1.jpg', title: '체육5', kind: '족구' },
+                    { id: 6, poster: 'image/1.jpg', title: '체육6', kind: '볼링' },
+                    { id: 7, poster: 'image/1.jpg', title: '체육7', kind: '농구' },
+                    { id: 8, poster: 'image/1.jpg', title: '체육8', kind: '족구' },
+                    { id: 9, poster: 'image/1.jpg', title: '체육9', kind: '볼링' },
                 ],
             },
             {
@@ -129,7 +129,7 @@ class Crew extends Component {
                         <CrewNav data={crews}></CrewNav>
                     </Col>
                     <Col bsPrefix="crew_col_2">
-                        <Route path="/crew/:crew_nav" component={CrewList} />
+                        <Route path="/crew/:crew_nav" render={(props) => <CrewList data={crews} {...props} />} />
                     </Col>
                 </Row>
             </Container>

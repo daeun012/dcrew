@@ -1,0 +1,9 @@
+.crew_view .crew_info {
+    padding: 4rem 0;
+    display: flex;
+}
+.crew_info img {
+    width: 500px;
+    height: 600px;
+    float: left;
+}

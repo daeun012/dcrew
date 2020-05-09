@@ -16,7 +16,7 @@ function App() {
             <Route path="/" exact={true} component={Home} />
             <Switch>
                 <Route path="/crew/view/:id" component={CrewView} />
-                <Route path="/crew" component={Crew} />
+                <Route path="/crew/:crew_nav" component={Crew} />
             </Switch>
             <Route path="/board" component={Board} />
         </HashRouter>

@@ -1,24 +1,16 @@
 import React, { Component } from 'react';
 import OneCrew from '../component/OneCrew';
 
-class CrewList extends Component {
-    componentDidMount() {
-        const { location, history } = this.props;
-        if (location.state === undefined) {
-            history.push('/crew');
-        }
-    }
-
-    render() {
-        const { location } = this.props;
-        console.log(location.state);
-        if (location.state) {
-            return location.state.crew_list.map((crew) => (
-                <OneCrew id={crew.id} title={crew.title} kind={crew.kind} poster={crew.poster} />
+function CrewList({ data, match }) {
+    var i = 0;
+    while (i < data.length) {
+        if (data[i].crew_nav === match.params.crew_nav) {
+            return data[i].crew_list.map((crew) => (
+                <OneCrew key={crew.id} id={crew.id} title={crew.title} kind={crew.kind} poster={crew.poster}></OneCrew>
             ));
-        } else {
-            return null;
+            break;
         }
+        i = i + 1;
     }
 }
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import './ImageSlider.css';
+import { Carousel } from 'react-bootstrap';
 
 class CustomSlide extends Component {
     render() {
@@ -16,18 +17,12 @@ class CustomSlide extends Component {
 
 function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
-    return <div className={className} style={{ ...style, display: 'block', left: '-10px' }} onClick={onClick} />;
+    return <div className={className} style={{ ...style }} onClick={onClick} />;
 }
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: 'block', right: '-10px', backgroundImage: '/image/right.svg' }}
-            onClick={onClick}
-        ></div>
-    );
+    return <div className={className} style={{ ...style }} onClick={onClick}></div>;
 }
 
 export default class ImageSlider extends Component {
@@ -43,9 +38,9 @@ export default class ImageSlider extends Component {
         var settings = {
             dots: true,
             infinite: true,
-            speed: 500,
+            speed: 800,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 5000,
             slidesToShow: 5,
             slidesToScroll: 5,
             initialSlide: 0,
@@ -80,9 +75,9 @@ export default class ImageSlider extends Component {
         };
 
         const { slider_lists } = this.state;
+
         return (
             <div className="custom_slide">
-                <h2>Custom Slides</h2>
                 <Slider {...settings}>
                     {slider_lists.map((list) => (
                         <CustomSlide key={list.id} title={list.title} poster={list.poster}></CustomSlide>

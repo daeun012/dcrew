@@ -21,7 +21,7 @@ function Navigator() {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="nav-link" to="/crew">
+                            <NavLink className="nav-link" to="/crew/체육분과">
                                 동아리 소개
                             </NavLink>
                         </NavItem>

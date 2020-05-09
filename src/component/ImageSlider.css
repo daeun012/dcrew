@@ -1,6 +1,5 @@
 .custom_slide {
-    background-color: lightgray;
-    padding: 0 20px;
+    padding: 30px 20px;
 }
 
 .slider_list {
@@ -12,6 +11,38 @@
 }
 
 .slider_list > img {
-    width: 10rem;
-    height: 12rem;
+    width: 12rem;
+    height: 14rem;
+}
+
+.slick-prev:before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    content: '' !important;
+    position: absolute;
+    background-image: url('/image/left.svg');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 30px;
+}
+
+.slick-next:before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    content: '' !important;
+    position: absolute;
+    background-image: url('/image/right.svg');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 30px;
+    opacity: 1;
 }

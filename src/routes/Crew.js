@@ -15,7 +15,7 @@ class Crew extends Component {
                 id: 1,
                 crew_nav: '체육분과',
                 crew_list: [
-                    { id: 1, poster: 'image/1.jpg', title: '체육1', kind: '농구' },
+                    { id: 1, poster: '동아리/1.png', title: 'TNT', kind: '배드민턴' },
                     { id: 2, poster: 'image/1.jpg', title: '체육2', kind: '족구' },
                     { id: 3, poster: 'image/1.jpg', title: '체육3', kind: '볼링' },
                     { id: 4, poster: 'image/1.jpg', title: '체육4', kind: '농구' },

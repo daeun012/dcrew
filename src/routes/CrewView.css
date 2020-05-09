@@ -1,9 +1,19 @@
-.crew_view .crew_info {
+.crew_view {
     padding: 4rem 0;
     display: flex;
 }
-.crew_info img {
+.crew_view img {
     width: 500px;
     height: 600px;
     float: left;
+}
+
+.crew_detail {
+    flex-grow: 1;
+    padding: 0 2rem;
+}
+
+.crew_detail > h5,
+h1 {
+    text-align: center;
 }

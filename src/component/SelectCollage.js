@@ -6,7 +6,7 @@ class SelectCollage extends Component {
         return (
             <div className="selected_collage">
                 <img src={this.props.logo} alt={this.props.collage} title={this.props.collage} />
-                <h4 style={{ fontWeight: 'bold', marginTop: '0.8rem' }}>{this.props.collage}</h4>
+                {/*   <h4 style={{ fontWeight: 'bold', marginTop: '0.8rem' }}>{this.props.collage}</h4> */}
             </div>
         );
     }

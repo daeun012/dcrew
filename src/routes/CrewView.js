@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import OneCrew from '../component/OneCrew';
 
-class CrewList extends Component {
+class CrewView extends Component {
     componentDidMount() {
         const { location, history } = this.props;
         if (location.state === undefined) {
-            history.push('/crew');
+            history.push('/');
         }
     }
-
     render() {
         const { location } = this.props;
         console.log(location.state);
         if (location.state) {
-            return location.state.crew_list.map((crew) => (
-                <OneCrew id={crew.id} title={crew.title} kind={crew.kind} poster={crew.poster} />
-            ));
+            return <span>{location.state.title}</span>;
         } else {
             return null;
         }
     }
 }
 
-export default CrewList;
+export default CrewView;

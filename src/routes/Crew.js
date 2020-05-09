@@ -129,7 +129,7 @@ class Crew extends Component {
                         <CrewNav data={crews}></CrewNav>
                     </Col>
                     <Col bsPrefix="crew_col_2">
-                        <Route path="/crew" component={CrewList} />
+                        <Route path="/crew/:crew_nav" component={CrewList} />
                     </Col>
                 </Row>
             </Container>

@@ -1,8 +1,8 @@
 .selected_collage img {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 120px;
 }
 
 .selected_collage {
-    padding: 3rem 0;
+    padding: 5rem 0;
 }

@@ -11,7 +11,7 @@ class OneCrew extends Component {
                 <Link
                     className="my_link"
                     to={{
-                        pathname: `/crew/${id}`,
+                        pathname: `/crew/view/${id}`,
                         state: {
                             poster,
                             title,

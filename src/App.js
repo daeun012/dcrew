@@ -18,6 +18,7 @@ function App() {
                 <Route path="/crew/view/:id" component={CrewView} />
                 <Route path="/crew/:crew_nav" component={Crew} />
             </Switch>
+
             <Route path="/board" component={Board} />
         </HashRouter>
     );

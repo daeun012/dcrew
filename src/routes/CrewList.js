@@ -6,7 +6,7 @@ function CrewList({ data, match }) {
     while (i < data.length) {
         if (data[i].crew_nav === match.params.crew_nav) {
             return data[i].crew_list.map((crew) => (
-                <OneCrew key={crew.id} id={crew.id} title={crew.title} kind={crew.kind} poster={crew.poster}></OneCrew>
+                <OneCrew key={crew.id} id={crew.id} title={crew.title} kind={crew.kind} poster={crew.poster} desc={crew.desc}></OneCrew>
             ));
             break;
         }

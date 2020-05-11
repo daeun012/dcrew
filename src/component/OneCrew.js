@@ -5,7 +5,7 @@ import './OneCrew.css';
 
 class OneCrew extends Component {
     render() {
-        const { id, title, kind, poster } = this.props;
+        const { id, title, kind, poster, desc } = this.props;
         return (
             <div className="crew">
                 <Link
@@ -16,6 +16,7 @@ class OneCrew extends Component {
                             poster,
                             title,
                             kind,
+                            desc,
                         },
                     }}
                 >

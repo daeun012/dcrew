@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { Container, Navbar, Nav, Button, NavItem } from 'react-bootstrap';
 import './Navigator.css';
 
@@ -22,7 +22,12 @@ function Navigator() {
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link" to="/crew/체육분과">
-                                동아리 소개
+                                대학교
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link" to="/category">
+                                카테고리
                             </NavLink>
                         </NavItem>
                         <NavItem>
@@ -30,15 +35,16 @@ function Navigator() {
                                 동아리 연합
                             </NavLink>
                         </NavItem>
+
                         <NavItem>
                             <NavLink className="nav-link" to="/community">
-                                자유게시판
+                                모두의 게시판
                             </NavLink>
                         </NavItem>
                     </Nav>
                     <div className="button_nav">
                         <Button size="sm" variant="outline-primary" style={{ marginRight: '5px' }}>
-                            로그인
+                            <Link to="/login">로그인</Link>
                         </Button>{' '}
                         <Button size="sm" variant="primary">
                             회원가입
